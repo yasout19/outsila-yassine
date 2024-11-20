@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outsila Yassine | Portfolio</title>
+    <style>
+        /* General Styles */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #121212;
+            color: #f2f2f2;
+            line-height: 1.6;
+            padding-top: 80px;
+        }
+
+        /* Header Styles */
+        header {
+            background: linear-gradient(135deg, #4e6d7c, #2f3b4c);
+            color: #fff;
+            text-align: center;
+            padding: 60px 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        header h1 {
+            font-size: 3.5rem;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        header p {
+            font-size: 1.4rem;
+            color: #a9d8e7;
+            font-weight: 400;
+        }
+
+        /* Navigation Styles */
+        nav {
+            background-color: #1a2533;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 100;
+            padding: 10px 0;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            padding: 12px 25px;
+            font-size: 1.1rem;
+            font-weight: 500;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        nav a:hover {
+            background-color: #4e6d7c;
+            transform: scale(1.05);
+            border-radius: 5px;
+        }
+
+        /* Section Styles */
+        .section {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 30px;
+            background: #1e242d;
+            border-radius: 12px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .section:hover {
+            transform: translateY(-10px);
+        }
+
+        .section h2 {
+            font-size: 2.4rem;
+            color: #4e6d7c;
+            border-bottom: 3px solid #4e6d7c;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        details {
+            background: #28313b;
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        details summary {
+            font-size: 1.2rem;
+            font-weight: bold;
+            cursor: pointer;
+            color: #a9d8e7;
+            transition: color 0.3s;
+        }
+
+        details summary:hover {
+            color: #4e6d7c;
+        }
+
+        details p {
+            font-size: 1rem;
+            color: #f2f2f2;
+            margin-top: 10px;
+        }
+
+        /* Contact Info */
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .contact-item {
+            background: #4e6d7c;
+            color: white;
+            padding: 15px;
+            border-radius: 8px;
+            flex: 1 1 calc(33% - 20px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background-color 0.3s ease;
+        }
+
+        .contact-item a {
+            color: #e0f7ff;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+
+        .contact-item a:hover {
+            color: #1e242d;
+            text-decoration: underline;
+        }
+
+        .contact-item:hover {
+            background-color: #3b5360;
+        }
+
+        .contact-item .icon {
+            margin-right: 15px;
+            font-size: 1.5rem;
+        }
+
+        /* Footer */
+        footer {
+            background: #121212;
+            color: #a9d8e7;
+            text-align: center;
+            padding: 25px;
+            font-size: 1rem;
+            box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Outsila Yassine</h1>
+        <p>Master's Student in Data Science</p>
+    </header>
+
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section class="section" id="about">
+        <h2>About Me</h2>
+        <p>I am a passionate and motivated Master's student in Data Science with a strong focus on creating models that solve real-world problems and visualizing relevant data to aid in decision-making. My curiosity and proactive approach drive me to constantly explore new technologies and innovative methods. I possess an analytical mindset, always striving to transform complex data into actionable and understandable solutions.</p>
+        <div class="contact-info">
+            <div class="contact-item">
+                <span class="icon">📧</span>
+                <a href="https://drive.google.com/file/d/1WQ2dNfGYuMTfLzsph-buJsKHECixDU2Q/view?usp=sharing">My CV</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="projects">
+        <h2>Projects</h2>
+        <details open>
+            <summary>Real-Time Surveillance System with Facial Recognition</summary>
+            <p>Developed a real-time surveillance system using facial recognition integrated with Apache Kafka for data stream management and Apache Spark for real-time processing. The system ensures fast and accurate identification, suitable for security and monitoring applications.</p>
+        </details>
+        <details open>
+            <summary>Photovoltaic Solar Energy Prediction Model</summary>
+            <p>Developed a system to predict photovoltaic solar energy production using deep learning techniques such as <strong>LSTMs</strong> and attention mechanisms. Focused on data analysis and processing to enhance prediction accuracy, ensuring more reliable energy forecasting.</p>
+        </details>
+        <details open>
+            <summary>Travel Agency Web Application with Django</summary>
+            <p>Developed a web platform for a travel agency using the Django framework. Implemented features for booking and managing trips, providing an efficient and user-friendly experience for both clients and administrators.</p>
+        </details>
+        <details open>
+            <summary>Fuel and Vehicle Management Web Application</summary>
+            <p>Developed a web application for managing and tracking fuel consumption, vehicle technical inspection dates, and insurance renewals. Built with the MERN stack (MongoDB, Express.js, React, Node.js), the application features a responsive and intuitive interface, along with alerting systems to notify users about upcoming deadlines.</p>
+        </details>
+    </section>
+
+    <section class="section" id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>✔️ <strong>Programming Languages:</strong> C++, Python, C, Java</li>
+            <li>✔️ <strong>Web Development:</strong> HTML, CSS, JavaScript, React.js, Node.js, Django</li>
+            <li>✔️ <strong>Databases:</strong> SQL, MongoDB, Database Management</li>
+            <li>✔️ <strong>Artificial Intelligence:</strong> Machine Learning, Deep Learning</li>
+            <li>✔️ <strong>Data Science Tools:</strong> Pandas, NumPy, Scikit-learn, TensorFlow, Keras</li>
+            <li>✔️ <strong>Machine Learning Models:</strong> ResNet, DenseNet, LSTM, Transformer Models</li>
+
+        </ul>
+    </section>
+
+    <section class="section" id="contact">
+        <h2>Contact</h2>
+        <div class="contact-info">
+            <div class="contact-item">
+                <span class="icon">📧</span>
+                <a href="outsila.yassine@gmail.com">outsila.yassine@gmail.com</a>
+            </div>
+            <div class="contact-item">
+                <span class="icon">🔗</span>
+                <a href="https://www.linkedin.com/in/yassine-outsila-b5a406300/" target="_blank">LinkedIn</a>
+            </div>
+            <div class="contact-item">
+                <span class="icon">🌐</span>
+                <a href="https://github.com/yasout19" target="_blank">GitHub</a>            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Outsila Yassine</p>
+    </footer>
+</body>
+</html>
